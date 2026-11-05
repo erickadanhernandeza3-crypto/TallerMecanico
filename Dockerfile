@@ -1,6 +1,8 @@
 FROM php:8.0-apache
 
-RUN apt-get update \
+# Debian 11 ya no tiene soporte: sus paquetes de seguridad solo quedan en el archivo historico
+RUN find /etc/apt -type f \( -name '*.list' -o -name '*.sources' \) -exec sed -i 's|deb.debian.org|archive.debian.org|g' {} + \
+ && apt-get -o Acquire::Check-Valid-Until=false update \
  && apt-get install -y --no-install-recommends mariadb-server \
  && rm -rf /var/lib/apt/lists/* \
  && docker-php-ext-install mysqli
