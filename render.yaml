@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: taller-mecanico-checo
+    runtime: docker
+    plan: free
+    healthCheckPath: /Login.php

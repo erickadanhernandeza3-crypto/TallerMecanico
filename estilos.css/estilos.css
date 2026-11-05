@@ -1,0 +1,58 @@
+body{
+    background-repeat: auto;
+    background-color: white;
+}
+
+
+.subtitulo{
+color: rgb(0, 255, 8);
+font-size: 27px;
+}
+
+.mensaje-bienvenida {
+    color: rgb(0, 100, 128);
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pasion-Bienvenida{
+color: blueviolet;
+font-size: 28px;
+font-weight: bold;
+}
+
+.descripcion{
+    color: rgb(169, 23, 23);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+
+.vision{
+    color: rgb(8, 8, 15);
+    font-weight: bold;
+}
+
+.Confianza{
+    color:black;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.ConfianzaDescrip{
+    color: rgb(162, 14, 14);
+     text-align: center;
+    font-weight: bold;
+}
+
+.CatalogoTitulo{
+    color:rgb(217, 255, 0);
+    text-align: center;
+}
